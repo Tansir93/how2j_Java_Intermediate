@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CollectFramework/CollectFramework.iml" filepath="$PROJECT_DIR$/CollectFramework/CollectFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FilterTest/FilterTest.iml" filepath="$PROJECT_DIR$/FilterTest/FilterTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FilterTest1/FilterTest1.iml" filepath="$PROJECT_DIR$/FilterTest1/FilterTest1.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenericityTest/GenericityTest.iml" filepath="$PROJECT_DIR$/GenericityTest/GenericityTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloLambda/HelloLambda.iml" filepath="$PROJECT_DIR$/HelloLambda/HelloLambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListenerTest/ListenerTest.iml" filepath="$PROJECT_DIR$/ListenerTest/ListenerTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadTest/ThreadTest.iml" filepath="$PROJECT_DIR$/ThreadTest/ThreadTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/VueTest/VueTest.iml" filepath="$PROJECT_DIR$/VueTest/VueTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/reflectTest/reflectTest.iml" filepath="$PROJECT_DIR$/reflectTest/reflectTest.iml" />

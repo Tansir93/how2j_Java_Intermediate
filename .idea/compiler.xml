@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Log4jTest" />
         <module name="ServletTest" />
+        <module name="showcar" />
         <module name="how2j_Java_Intermediate" />
         <module name="ExceptionHandling" />
       </profile>
