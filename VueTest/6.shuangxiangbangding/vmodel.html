@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+<input type="text" v-model="name">
+    <button type="button" @click="method">提交</button>
+<br>
+    lazy
+    <input type="text" v-model.lazy="name">
+    {{name}}
+
+    .number
+    <input type="text" v-model.number="number">
+    {{number}}
+
+    .trim
+    <input type="text" v-model.trim="name">
+
+
+</div>
+</body>
+<script>
+    new Vue({
+        el:"#div1",
+        data:{
+            name:"model1",
+            number:12
+        },
+        methods:{
+            method:function () {
+                alert(this.name);
+            }
+        }
+    })
+</script>
+
+</html>

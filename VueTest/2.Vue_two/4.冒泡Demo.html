@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="http://how2j.cn/study/vue.min.js"></script>
+
+<style type="text/css">
+    * {
+        margin: 0 auto;
+        text-align:center;
+        line-height: 40px;
+    }
+    div {
+        width: 100px;
+        cursor:pointer;
+    }
+    #grandFather {
+        background: green;
+    }
+    #father {
+        background: blue;
+    }
+    #me {
+        background: red;
+    }#son {
+         background: gray;
+     }
+</style>
+
+<div id="content">
+    <div id="grandFather"  v-on:click="doc">
+        grandFather
+        <div id="father" v-on:click="doc">
+            father
+            <div id="me" v-on:click="doc">
+                me
+                <div id="son" v-on:click="doc">
+                    son
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var content = new Vue({
+        el: "#content",
+        data: {
+            id: ''
+        },
+        methods: {
+            doc: function () {
+                this.id= event.currentTarget.id;
+                alert(this.id)
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

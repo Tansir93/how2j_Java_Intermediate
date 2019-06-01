@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="http://how2j.cn/study/vue.min.js"></script>
+
+<div id="div1">
+
+    <button @click="toutai"> 看看下辈子投胎是做什么的 </button>
+    <div v-if="number>98"> 神仙</div>
+    <div v-else-if="number>95"> 国家领导人</div>
+    <div v-else-if="number>90"> 大富商</div>
+    <div v-else-if="number>80"> 大企业主</div>
+    <div v-else-if="number>70"> 演艺明星</div>
+    <div v-else-if="number>60"> 小企业主</div>
+    <div v-else-if="number>50"> 普通公务员</div>
+    <div v-else-if="number>40"> 小个体户</div>
+    <div v-else-if="number>30"> 血汗工厂工人</div>
+    <div v-else-if="number>20"> 偏远山区农民</div>
+    <div v-else> 流浪汉</div>
+    {{number}}
+    <div v-if="number>98"> 神仙</div>
+    <div v-else-if="number<50">还不到50</div>
+    <div v-else-if="number<80"> 大企业主</div>
+    <div v-else-if="number<90">{{number}}:到50了</div>
+    <div v-else> cccccccc</div>
+    <button id="b2" @click="toutai">点击</button>
+
+</div>
+
+<script>
+
+    new Vue({
+        el: '#div1',
+        data: {
+            number:0
+        },
+        methods:{
+            toutai: function(){
+                this.number=Math.random()*100
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

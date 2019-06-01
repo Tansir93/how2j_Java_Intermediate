@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <div v-if="show"> 默认这一条是看得见的</div>
+    <div v-else>看不见它就看我</div>
+    <button id="b1" @click="toggle">点击</button>
+<br>
+
+
+    <div v-if="number>98"> {{number}}</div>
+    <div v-else-if="number<50">{{number}}还不到50</div>
+    <div v-else-if="number<90">{{number}}:到50了</div>
+    <div v-else> {{number}}没有了</div>
+    <button id="b2" @click="count1">点击</button>
+</div>
+</body>
+<script>
+    new Vue({
+        el:"#div1",
+        data:{
+            show:true,
+            number:48
+        },
+        methods:{
+            toggle:function () {
+                this.show=!this.show;
+            },
+            count1:function () {
+                this.number++;
+            }
+        }
+    })
+</script>
+</html>

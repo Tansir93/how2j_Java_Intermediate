@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="all">
+    <div id="a"  @click="doc">
+        a
+        <button id="aa" >aa</button>
+        <!--阻止冒泡-->
+        <div id="b" @click.stop="doc" >
+            b
+            <button id="bb" >bb</button>
+
+            <!--只有自己能触发，子元素无法触发-->
+            <div id="c" v-on:click.self="doc">
+                c
+                <button id="cc">cc</button>
+
+                <!--当冒泡发生的时候，就会优先让father捕捉事件。-->
+                <div id="d" @click.capture="doc">
+                    d
+                    <button id="dd">dd</button>
+
+                    <!--只能提交一次-->
+                    <div id="e" @click.once="doc">
+                        e
+                        <button id="ee">ee</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    new Vue({
+        el: "#all",
+        data: {
+            id: ''
+        },
+        methods: {
+            doc: function () {
+                this.id = event.currentTarget.id;
+                alert(this.id)
+            }
+        }
+    })
+</script>
+</html>

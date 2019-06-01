@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+<input type="text" v-model.number="input1">
+/<input type="text" v-model.number="input2">
+=<input type="text" v-model.number="output1">
+    {{output1}}
+</div>
+</body>
+<script>
+/*    new Vue({
+        el:"#div1",
+        data:{
+            input1:0,
+            input2:0,
+            output1:0
+        },
+        watch:{
+            re:function (val) {
+                this.input1=val;
+                this.output1=this.input1/this.input2;
+            }
+        }
+        
+    })*/
+
+
+    new Vue({
+        el: '#div1',
+        data: {
+            input1:6.4,
+            input2:0,
+            output1:0
+        },
+        watch:{
+            rmb:function(val) {
+                this.input1 = val;
+                this.output1 = this.input1 / this.input2;
+            },
+            dollar:function(val) {
+                this.output1 = val;
+                this.input1 = this.output1 * this.input2;
+            },
+        }
+
+    })
+</script>
+</html>

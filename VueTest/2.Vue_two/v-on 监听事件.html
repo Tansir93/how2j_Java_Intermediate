@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    总共点击了{{clickNumber}}次
+    <!--在按钮上增加 click 监听，调用 count 方法-->
+<button v-on:click="count" >点击</button>
+    <!--v-on 还可以缩写为 @-->
+    <button @click="count" >点击</button>
+</div>
+
+</body>
+<script>
+    new Vue({
+        el: '#div1',
+        /*在 js里为 Vue 对象的数据设置为 clickNumber*/
+        data:{
+            clickNumber:0
+        },
+        methods:{
+            /*新建一个方法： count， 其作用是 clickNumber 自增1*/
+            count: function () {
+                this.clickNumber++;
+            }
+        }
+    })
+/*new Vue({
+    el: '#div1',
+    data: {
+        clickNumber:0
+    },
+    methods:{
+        count: function(){
+            this.clickNumber++;
+        }
+    }
+})*/
+</script>
+</html>

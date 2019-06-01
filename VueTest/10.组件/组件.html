@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <product></product>
+    <product1></product1>
+    <product2 name="唯美诺新款男士手包男包真皮大容量小羊皮手拿包信封包软皮夹包潮"></product2>
+
+</div>
+
+</body>
+<script>
+    new Vue({
+        el:"#div1",
+        components:{
+            'product1':{
+                template:'<div >MAXFEEL休闲男士手包真皮手拿包大容量信封包手抓包夹包软韩版潮</div>'
+            }
+        }
+    })
+Vue.component('product', {
+    template: '<div class="product" >MAXFEEL休闲男士手包真皮手拿包大容量信封包手抓包夹包软韩版潮</div>'
+})
+    Vue.component('product2', {
+        props:['name'],
+        template: '<div class="product" >{{name}}</div>'
+    })
+
+
+
+new Vue({
+    el:"#div1",
+    data:{
+        outName:'产品名称'
+    }
+})
+   /* Vue.components("product1",{template:'<div >MAXFEEL休闲男士手包真皮手拿包大容量信封包手抓包夹包软韩版潮</div>'})*/
+</script>
+</html>

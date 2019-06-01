@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+<table>
+    <tr>
+        <th>name</th>
+        <th>hp</th>
+    </tr>
+    v-for 循环语句
+    <tr v-for="hore in hores">
+        <td>{{hore.name}}</td>
+        <td>{{hore.hp}}</td>
+    </tr>
+    index用法:获取遍历下标
+    <tr v-for="hore ,index in hores">
+        <td>{{index}},{{hore.name}}</td>
+        <td>{{hore.hp}}</td>
+    </tr>
+    纯数字遍历
+    <tr v-for="i in 10">
+        <td>{{i}}</td>
+    </tr>
+</table>
+</div>
+</body>
+<script>
+    var data = [
+        {name:"盖伦",hp:341},
+        {name:"提莫",hp:225},
+        {name:"安妮",hp:427},
+        {name:"死歌",hp:893}
+    ];
+    new Vue({
+        el:"#div1",
+        data:{
+            hores:data
+        }
+    })
+</script>
+</html>

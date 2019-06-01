@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div id="div1">
+{{v.A}}
+</div>
+<script>
+    //准备数据
+    var v={"A":"a","B":"b"}
+    //通过vue.js 把数据和对应的视图关联起来
+    new Vue({
+        el:'#div1',
+        data:{
+            message:v
+        }
+    })
+</script>
+</body>
+</html>

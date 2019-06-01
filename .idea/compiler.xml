@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Log4jTest" />
+        <module name="ServletTest" />
+        <module name="how2j_Java_Intermediate" />
+        <module name="ExceptionHandling" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <input v-model= "data"  /><br>
+    {{ data|capit |capitalizeLastLetter}}
+</div>
+
+</body>
+<script>
+    new Vue({
+        el:'#div1',
+        data:{
+            data:'',
+        },
+        filters:{
+            capit:function (value) {
+                if(value==null)
+                    return '';
+                value=value.toString();
+                return value.charAt(0).toUpperCase() + value.substring(1)
+            },
+            capitalizeLastLetter:function(value) {
+                if (!value) return '' //如果为空，则返回空字符串
+                value = value.toString()
+                return value.substring(0,value.length-1)+ value.charAt(value.length-1).toUpperCase()
+            }
+        }
+    })
+</script>
+</html>

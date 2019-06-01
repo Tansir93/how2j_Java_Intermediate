@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<script src="http://how2j.cn/study/vue.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div1">
+    <input type="text" v-bind:value="define">
+    <a v-bind:href="page">http://12306.com</a>
+    <br>
+    简写成:value
+    <br>
+    <input type="text" :value="define">
+    <a :href="page">http://12306.com</a>
+</div>
+
+</body>
+<script>
+    new Vue({
+        el:"#div1",
+        data:{
+            define:"默认值",
+            page:'http://12306.co'
+        }
+    })
+</script>
+</html>

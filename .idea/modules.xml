@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CollectFramework/CollectFramework.iml" filepath="$PROJECT_DIR$/CollectFramework/CollectFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GenericityTest/GenericityTest.iml" filepath="$PROJECT_DIR$/GenericityTest/GenericityTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloLambda/HelloLambda.iml" filepath="$PROJECT_DIR$/HelloLambda/HelloLambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadTest/ThreadTest.iml" filepath="$PROJECT_DIR$/ThreadTest/ThreadTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VueTest/VueTest.iml" filepath="$PROJECT_DIR$/VueTest/VueTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflectTest/reflectTest.iml" filepath="$PROJECT_DIR$/reflectTest/reflectTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhujie/zhujie.iml" filepath="$PROJECT_DIR$/zhujie/zhujie.iml" />
+    </modules>
+  </component>
+</project>
